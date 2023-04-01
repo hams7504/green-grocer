@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+  </head>
+  <body>
+      <form action="{{ url_for('farmeradd')}}" method="post">
+          <h5>Enter the user Details</h5>
+
+          <div>
+            <input type="text" name="name" placeholder="Enter your name">
+          </div>
+          <div>
+              <input type="text" name="username" placeholder="Enter your desired username">
+          </div>
+          <div>
+              <input type="text" name="store_name" placeholder="Enter your store's name">
+          </div>
+
+          <div>
+            <input type="text" name="location" placeholder="Enter your store's location">
+        </div>
+        <div>
+            <input type="text" name="type" placeholder="What type of produce do you sell?">
+        </div>
+
+        <div>
+            <input type="text" name="bio" placeholder="Enter a short description for your store">
+        </div>
+
+
+          <div>
+              <button >Submit</button>
+          </div>
+      </form>
+  </body>
+
+</html>
