@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <style rel="stylesheet" type="text/css">
+        .indent {
+        text-indent: 3em;
+        }
+        </style>
+  </head>
+  <body>
+      <h1>Customer Dashboard</h1>
+      <a href="{{url_for('customerlogout')}}">Press here to log out</a> <br>
+
+      <a href="{{url_for('forum')}}">Access the community forum!</a> <br>
+
+      <h2>All Farmers' Markerts:</h2>
+      <ul>
+        {% for farmer in farmers %}
+        <li><b>{{ farmer.store_name }}</b> <small> - {{ farmer.username }}</small></li>
+        <i>Located at: {{ farmer.location }}</i> <br>
+        <p class="indent"><b><i>Hosted by: </i></b>{{ farmer.name }}</p>
+        <p class="indent"><b><i>Types of produce offered: </i></b>{{ farmer.type }}</p>
+        <p class="indent"><b><i>About this store: </i></b>{{ farmer.bio }}</p>
+        {% endfor %}
+      </ul>
+
+  </body>
+
+</html>

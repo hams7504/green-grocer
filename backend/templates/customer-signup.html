@@ -4,18 +4,12 @@
       <meta charset="utf-8">
   </head>
   <body>
-      <form action="{{ url_for('customeradd')}}" method="post">
-          <h5>Enter the user Details</h5>
+      <h1>Register as a customer</h1>
+      <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.username }}
+        {{ form.submit }}
 
-          <div>
-              <input type="text" name="username" placeholder="Enter your desired username">
-          </div>
-          <div>
-              <input type="text" name="name" placeholder="Enter your location">
-          </div>
-          <div>
-              <button >Submit</button>
-          </div>
       </form>
   </body>
 

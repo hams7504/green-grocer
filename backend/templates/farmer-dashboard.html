@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+  </head>
+  <body>
+      <h1>Farmer Dashboard</h1>
+      <a href="{{url_for('farmerlogout')}}">Press here to log out</a> <br>
+
+      <a href="{{url_for('forum')}}">Access the community forum!</a> <br>
+
+      <h2>Hello, {{ farmer.name }}!</h2>
+
+      <p><b><h3> Here is your storefront information: </h3></b>
+      <i>Store name:</i> {{ farmer.store_name }} <br>
+      <i>Store location:</i> {{ farmer.location }} <br>
+      <i>Types of produce sold:</i> {{ farmer.type }} <br>
+
+      <i>Store bio:</i> {{ farmer.bio }} <br>
+
+      </p>
+
+  </body>
+
+</html>
