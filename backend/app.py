@@ -10,7 +10,7 @@ import datetime
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost/greener-grocer'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:<REDACTEDFORPRIVACY>@localhost/greener-grocer'
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.secret_key = 'secret string'
 
